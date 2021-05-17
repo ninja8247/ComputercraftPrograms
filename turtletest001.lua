@@ -7,8 +7,8 @@ return 0;
 end
 
 function goback()
-	moving = 1
-	while (moving = 1)
+	moving = true
+	while (moving == true)
 	do
 		turtle.turnLeft()
 		turtle.turnLeft()
