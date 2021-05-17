@@ -8,7 +8,7 @@ end
 
 function goback()
 	moving = true
-	while moving = true
+	while (moving = true)
 	do
 		turtle.turnLeft()
 		turtle.turnLeft()
@@ -30,7 +30,7 @@ end
 
 islighting = true
 
-while islighting = true
+while (islighting = true)
 	do
 	if turtle.getFuelLevel() < 11
 	do
