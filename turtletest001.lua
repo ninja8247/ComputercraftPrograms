@@ -13,14 +13,14 @@ function goback()
 		turtle.turnLeft()
 		turtle.turnLeft()
 		if turtle.getFuelLevel() < 11
-		do
+		then
 			turtle.select(16)
 			turtle.refuel()
 			turtle.select(1)
 		end
 		move(11)
 		if turtle.detect()==true
-		do
+		then
 			moving = 0
 		end
 	end
@@ -34,7 +34,7 @@ islighting = true
 while (islighting == true)
 	do
 	if turtle.getFuelLevel() < 11
-	do
+	then
 		turtle.select(16)
 		turtle.refuel()
 		turtle.select(1)
@@ -42,7 +42,7 @@ while (islighting == true)
 	move(11)
 	turtle.placeDown()
 	if turtle.detect()==true
-	do
+	then
 		islighting = false
 	end
 end
