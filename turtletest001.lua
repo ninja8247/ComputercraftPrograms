@@ -7,11 +7,11 @@ return 0;
 end
 
 function goback()
+	turtle.turnLeft()
+	turtle.turnLeft()
 	moving = true
 	while (moving == true)
 	do
-		turtle.turnLeft()
-		turtle.turnLeft()
 		if turtle.getFuelLevel() < 11
 		then
 			turtle.select(16)
