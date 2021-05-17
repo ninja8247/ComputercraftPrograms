@@ -1,4 +1,3 @@
-#UPDATE
 function move(distance)
 	for moveblock=0,distance,1
 	do
