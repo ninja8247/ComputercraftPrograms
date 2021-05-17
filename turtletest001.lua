@@ -7,8 +7,8 @@ return 0;
 end
 
 function goback()
-	moving = true
-	while (moving = true)
+	moving = 1
+	while (moving = 1)
 	do
 		turtle.turnLeft()
 		turtle.turnLeft()
@@ -20,7 +20,7 @@ function goback()
 		end
 		move(11)
 		if turtle.detect()=true, do
-			moving = false
+			moving = 0
 		end
 	end
 	turtle.turnLeft()
