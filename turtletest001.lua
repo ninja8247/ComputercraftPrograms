@@ -1,3 +1,5 @@
+BlocksToMove = 10
+
 function move(distance)
 	for moveblock=0,distance,1
 	do
@@ -12,13 +14,13 @@ function goback()
 	moving = true
 	while (moving == true)
 	do
-		if turtle.getFuelLevel() < 10
+		if turtle.getFuelLevel() < BlocksToMove
 		then
 			turtle.select(16)
 			turtle.refuel()
 			turtle.select(1)
 		end
-		move(10)
+		move(BlocksToMove)
 		if turtle.detect()==true
 		then
 			moving = 0
@@ -33,13 +35,13 @@ islighting = true
 
 while (islighting == true)
 	do
-	if turtle.getFuelLevel() < 10
+	if turtle.getFuelLevel() < BlocksToMove
 	then
 		turtle.select(16)
 		turtle.refuel()
 		turtle.select(1)
 	end
-	move(10)
+	move(BlocksToMove)
 	turtle.placeDown()
 	if turtle.detect()==true
 	then
